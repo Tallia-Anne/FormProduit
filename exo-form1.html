@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tallia-Anne Wambiekele Kiyeko">
+    <title>Formulaire</title>
+        <style>
+        body {
+             background-color: #f4f5fc;
+}
+
+        .wrap {
+            width: 100%;
+           
+
+        }
+        
+            form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+             border-radius: 7px;
+            border: none;
+            padding: 40px;
+            }
+            .content-form {
+            margin: auto;
+             width: 34%;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px -1px 2px 1px #c9c9c9;
+            }
+            
+            .form-text {
+            padding-bottom: 25px;
+            }
+
+            input[type="text" i] {
+            padding: 11px 4px;
+            background-color: #e7ebff;
+            border-radius: 7px;
+            border: none;
+          }
+             input[type="text" i]:focus {
+                border: 1px solid #3a7bd5;
+          }
+            input[type="number" i] {
+            padding: 11px 4px;
+            background-color: #e7ebff;
+            border-radius: 7px;
+            border: none;
+            }
+
+            input[type=submit ] {
+            padding: 12px 62px;
+            background-image: linear-gradient(to right, #00d2ff , #3a7bd5  0%, #00d2ff  100%);
+            border-radius: 7px;
+            border: none;
+            box-shadow: 1px 1px 1px #cef1ee;;
+            color: white;
+        }
+        textarea {
+        resize : none;
+        background-color: #e7ebff;
+         border-radius: 7px;
+        border: none;
+}
+       
+        .button {
+            display: flex;
+    align-items: center;
+    justify-content: center;
+}
+       .fonddescription {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #d53a3a;
+        color: white;
+}
+     </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="content-form">
+        <form action=""  method="post" id="form" >
+        <h1>Produits</h1>
+        
+        <div class="wrap-form" >
+        <!-- //value permet recuperer les informations -->
+        <div class="form-text" >
+        
+        <input type="text" id="titre" placeholder="titre" value=""  >
+          
+            </div> 
+
+
+        <div class="form-text" >
+       
+        <input type="text" id="couleur" placeholder="couleur"  value=""  > 
+         
+            </div>
+        <div class="form-text" >
+            <select name="taille" id="tailleId">
+            <option value="s">s</option>
+            <option value="xs">xs</option>
+            <option value="m">m</option>
+            <option value="xl">xl</option>
+            <option value="xll">xll</option>
+            </select>
+        </div>
+
+         <div class="form-text" >
+        <input type="number" id="poids" placeholder="poids"  value=""  >   
+        
+            </div>
+        <div class="form-text" >
+        <input type="number" id="prix" placeholder="prix"  value=""  >   
+        
+            </div>
+        <div class="form-text" >
+        <textarea type="text" id="descr" placeholder="description"  value=""  > </textarea>  
+        
+            </div>
+        
+
+        <div class="button" >
+       
+        <input type="submit" id="submit"  > 
+        </div>
+        </div>
+        </form>
+        <br>
+
+         <div id="content">
+
+        </div>
+</div>
+
+        <!-- <table>
+        <tr>
+        <th>Momo</th>
+        <th>Momo</th>
+        </tr>
+         <tr>
+        <th>Momo</th>
+        <th>Momo</th>
+        </tr>
+        </table> -->
+
+</div>
+<script src="exo-form.js"></script>
+
+
+
+</body>
+
+
+</html>
+
